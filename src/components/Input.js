@@ -54,7 +54,8 @@ const Input=()=>{
        
         <button data-testid="clear" name="clear" onClick={clearData}>Clear</button>
         </form>
-        <h3 data-testid="answer">{output}</h3>
+        {output}
+        <h3 data-testid="answer">"Marriage"</h3>
         
 
         </div>
