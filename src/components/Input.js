@@ -17,15 +17,17 @@ const Input=()=>{
           setOutput("Please Enter valid input");
           return;
       }
-      let st=data
-      let st2=dataa
-  
+      let st=data.toLowerCase();
+      let st2=dataa.toLowerCase();
+      let set=new Set;
       let cnt=0;
      for(let s of st)
      {
-      if(st2.includes(s))
+        let ind=st2.indexOf(s)
+      if(ind!=-1 && !set.has(ind))
       {
           cnt++;
+          set.add(ind)
       }
      }
      let l1=st.length-cnt;
