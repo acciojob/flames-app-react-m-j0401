@@ -1,16 +1,19 @@
 import React, {Component, useState} from "react";
 import '../styles/App.css';
+import Input from "./Input";
 
-class App extends Component {
-    render() {
+
+function App(){
+  
 
         return(
             <div id="main">
-               {/* Do not remove the main div */}
+               <Input />
+               
             </div>
         )
-    }
 }
+
 
 
 export default App;
