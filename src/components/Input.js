@@ -18,16 +18,17 @@ const Input=()=>{
           return;
       }
       let st=data.toLowerCase();
-      let st2=dataa.toLowerCase();
-      let set=new Set;
+      let st2=dataa.toLowerCase().split('');
+    
       let cnt=0;
      for(let s of st)
      {
         let ind=st2.indexOf(s)
-      if(ind!=-1 && !set.has(ind))
+      if(ind!=-1 )
       {
           cnt++;
-          set.add(ind)
+          st2.splice(ind,1);
+          
       }
      }
      let l1=st.length-cnt;
